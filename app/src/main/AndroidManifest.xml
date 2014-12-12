@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chu.chatroomapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/g2sky"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.example.chu.chatroomapp.LobbyApplication" >
+        <activity
+            android:name=".Login"
+            android:icon="@drawable/g2sky"
+            android:label="Login" >
+            <intent-filter
+                android:label="@string/app_name"
+                android:icon="@drawable/g2sky">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Lobby"
+            android:label="@string/title_activity_lobby"
+            android:icon="@drawable/g2sky"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".RoomSelection"
+            android:label="@string/title_activity_room_selection" >
+        </activity>
+        <activity
+            android:name=".PrivateChat"
+            android:label="@string/title_activity_private_chat" >
+        </activity>
+        <activity
+            android:name=".ChatRoom"
+            android:label="@string/title_activity_chat_room" >
+        </activity>
+        <service
+            android:name=".LocalService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+
+    </application>
+
+</manifest>
